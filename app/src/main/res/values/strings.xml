@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RecyclerView</string>
+
+    <string name="choose_countries">请选择国别</string>
+    <string name="choose_country">COUNTRIES</string>
+    <string name="input_user">请输入用户名</string>
+    <string name="input_pwd">请输入密码</string>
+</resources>
