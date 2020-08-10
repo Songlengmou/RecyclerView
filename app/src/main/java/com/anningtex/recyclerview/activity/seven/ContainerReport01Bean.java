@@ -2,9 +2,12 @@ package com.anningtex.recyclerview.activity.seven;
 
 import java.util.List;
 
+import lombok.Data;
+
 /**
  * @Author Song
  */
+@Data
 public class ContainerReport01Bean {
 
     /**
@@ -17,22 +20,6 @@ public class ContainerReport01Bean {
     private String msg;
     private DataBean data;
 
-    public int getCode() {
-        return code;
-    }
-
-    public void setCode(int code) {
-        this.code = code;
-    }
-
-    public String getMsg() {
-        return msg;
-    }
-
-    public void setMsg(String msg) {
-        this.msg = msg;
-    }
-
     public DataBean getData() {
         return data;
     }
@@ -41,6 +28,7 @@ public class ContainerReport01Bean {
         this.data = data;
     }
 
+    @Data
     public static class DataBean {
         /**
          * Info_Container : {"ID":"1371","BLNo":"584305619","ContainerNo":"HASU5070898","ContainerSize":"1×40","LoadDate":"2019-10-16 00:00:00.000","ToCountryName":"肯尼亚","ToPort":"MOMBASA","SealNo":"MLCN3475055"}
@@ -52,50 +40,18 @@ public class ContainerReport01Bean {
 
         private InfoContainerBean Info_Container;
         private double volume_sum;
-        private int weight_sum;
-        private int qbales_sum;
+        private int weight_sum, qbales_sum;
         private List<ListGoodsListBean> List_GoodsList;
 
         public InfoContainerBean getInfo_Container() {
             return Info_Container;
         }
 
-        public void setInfo_Container(InfoContainerBean Info_Container) {
-            this.Info_Container = Info_Container;
-        }
-
-        public double getVolume_sum() {
-            return volume_sum;
-        }
-
-        public void setVolume_sum(double volume_sum) {
-            this.volume_sum = volume_sum;
-        }
-
-        public int getWeight_sum() {
-            return weight_sum;
-        }
-
-        public void setWeight_sum(int weight_sum) {
-            this.weight_sum = weight_sum;
-        }
-
-        public int getQbales_sum() {
-            return qbales_sum;
-        }
-
-        public void setQbales_sum(int qbales_sum) {
-            this.qbales_sum = qbales_sum;
-        }
-
         public List<ListGoodsListBean> getList_GoodsList() {
             return List_GoodsList;
         }
 
-        public void setList_GoodsList(List<ListGoodsListBean> List_GoodsList) {
-            this.List_GoodsList = List_GoodsList;
-        }
-
+        @Data
         public static class InfoContainerBean {
             /**
              * ID : 1371
@@ -116,72 +72,9 @@ public class ContainerReport01Bean {
             private String ToCountryName;
             private String ToPort;
             private String SealNo;
-
-            public String getID() {
-                return ID;
-            }
-
-            public void setID(String ID) {
-                this.ID = ID;
-            }
-
-            public String getBLNo() {
-                return BLNo;
-            }
-
-            public void setBLNo(String BLNo) {
-                this.BLNo = BLNo;
-            }
-
-            public String getContainerNo() {
-                return ContainerNo;
-            }
-
-            public void setContainerNo(String ContainerNo) {
-                this.ContainerNo = ContainerNo;
-            }
-
-            public String getContainerSize() {
-                return ContainerSize;
-            }
-
-            public void setContainerSize(String ContainerSize) {
-                this.ContainerSize = ContainerSize;
-            }
-
-            public String getLoadDate() {
-                return LoadDate;
-            }
-
-            public void setLoadDate(String LoadDate) {
-                this.LoadDate = LoadDate;
-            }
-
-            public String getToCountryName() {
-                return ToCountryName;
-            }
-
-            public void setToCountryName(String ToCountryName) {
-                this.ToCountryName = ToCountryName;
-            }
-
-            public String getToPort() {
-                return ToPort;
-            }
-
-            public void setToPort(String ToPort) {
-                this.ToPort = ToPort;
-            }
-
-            public String getSealNo() {
-                return SealNo;
-            }
-
-            public void setSealNo(String SealNo) {
-                this.SealNo = SealNo;
-            }
         }
 
+        @Data
         public static class ListGoodsListBean {
             /**
              * OrderNo : SJ190827A
@@ -221,142 +114,6 @@ public class ContainerReport01Bean {
             private String MetersPerBaleUnitNameEN;
             private String AVolume;
             private float AWeight;
-
-            public String getOrderNo() {
-                return OrderNo;
-            }
-
-            public void setOrderNo(String OrderNo) {
-                this.OrderNo = OrderNo;
-            }
-
-            public String getTexID_01() {
-                return TexID_01;
-            }
-
-            public void setTexID_01(String TexID_01) {
-                this.TexID_01 = TexID_01;
-            }
-
-            public int getQBales() {
-                return QBales;
-            }
-
-            public void setQBales(int QBales) {
-                this.QBales = QBales;
-            }
-
-            public String getVolumeTotal() {
-                return VolumeTotal;
-            }
-
-            public void setVolumeTotal(String VolumeTotal) {
-                this.VolumeTotal = VolumeTotal;
-            }
-
-            public float getWeightTotal() {
-                return WeightTotal;
-            }
-
-            public void setWeightTotal(float WeightTotal) {
-                this.WeightTotal = WeightTotal;
-            }
-
-            public String getDeliveryNote() {
-                return DeliveryNote;
-            }
-
-            public void setDeliveryNote(String DeliveryNote) {
-                this.DeliveryNote = DeliveryNote;
-            }
-
-            public double getMetersSum() {
-                return MetersSum;
-            }
-
-            public void setMetersSum(double MetersSum) {
-                this.MetersSum = MetersSum;
-            }
-
-            public int getMetersPerBale() {
-                return MetersPerBale;
-            }
-
-            public void setMetersPerBale(int MetersPerBale) {
-                this.MetersPerBale = MetersPerBale;
-            }
-
-            public String getMetersPerBaleUnitID() {
-                return MetersPerBaleUnitID;
-            }
-
-            public void setMetersPerBaleUnitID(String MetersPerBaleUnitID) {
-                this.MetersPerBaleUnitID = MetersPerBaleUnitID;
-            }
-
-            public String getVolumeUnit() {
-                return VolumeUnit;
-            }
-
-            public void setVolumeUnit(String VolumeUnit) {
-                this.VolumeUnit = VolumeUnit;
-            }
-
-            public String getWeightUnit() {
-                return WeightUnit;
-            }
-
-            public void setWeightUnit(String WeightUnit) {
-                this.WeightUnit = WeightUnit;
-            }
-
-            public String getTexName_01() {
-                return TexName_01;
-            }
-
-            public void setTexName_01(String TexName_01) {
-                this.TexName_01 = TexName_01;
-            }
-
-            public String getTexType() {
-                return TexType;
-            }
-
-            public void setTexType(String TexType) {
-                this.TexType = TexType;
-            }
-
-            public String getMetersPerBaleUnitName() {
-                return MetersPerBaleUnitName;
-            }
-
-            public void setMetersPerBaleUnitName(String MetersPerBaleUnitName) {
-                this.MetersPerBaleUnitName = MetersPerBaleUnitName;
-            }
-
-            public String getMetersPerBaleUnitNameEN() {
-                return MetersPerBaleUnitNameEN;
-            }
-
-            public void setMetersPerBaleUnitNameEN(String MetersPerBaleUnitNameEN) {
-                this.MetersPerBaleUnitNameEN = MetersPerBaleUnitNameEN;
-            }
-
-            public String getAVolume() {
-                return AVolume;
-            }
-
-            public void setAVolume(String AVolume) {
-                this.AVolume = AVolume;
-            }
-
-            public float getAWeight() {
-                return AWeight;
-            }
-
-            public void setAWeight(float AWeight) {
-                this.AWeight = AWeight;
-            }
         }
     }
 }

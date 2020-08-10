@@ -128,7 +128,10 @@ public class ContainerActivity extends AppCompatActivity {
             rvDetails.setAdapter(goodsAdapter);
 
             baseViewHolder.itemView.setOnClickListener(view -> {
-                startActivity(new Intent(ContainerActivity.this, ContainerReportMangerActivity.class));
+                Intent intent = new Intent(ContainerActivity.this, ContainerReportMangerActivity.class);
+                intent.putExtra("countryName", listInfoBean.getCountryName());
+                intent.putExtra("loadDate", listInfoBean.getLoadDate());
+                startActivity(intent);
             });
         }
     }

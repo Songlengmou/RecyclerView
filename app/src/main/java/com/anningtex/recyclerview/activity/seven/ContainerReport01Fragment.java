@@ -30,12 +30,6 @@ import butterknife.Unbinder;
 public class ContainerReport01Fragment extends Fragment {
     @BindView(R.id.rv_schedule)
     RecyclerView rvSchedule;
-    @BindView(R.id.ll_one)
-    LinearLayout llOne;
-    @BindView(R.id.ll_two)
-    LinearLayout llTwo;
-    @BindView(R.id.tv_null)
-    TextView tvNull;
     @BindView(R.id.tv_ContainerSize)
     TextView tvContainerSize;
     @BindView(R.id.tv_LoadDate)

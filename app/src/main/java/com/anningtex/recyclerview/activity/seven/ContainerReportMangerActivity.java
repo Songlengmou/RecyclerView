@@ -26,6 +26,7 @@ public class ContainerReportMangerActivity extends AppCompatActivity {
 
     private List<String> mTitleList = new ArrayList<>();
     private List<Fragment> fragments = new ArrayList<>();
+    private String countryName, loadDate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,10 +35,13 @@ public class ContainerReportMangerActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         setTitle("Seven");
 
+        countryName = getIntent().getStringExtra("countryName");
+        loadDate = getIntent().getStringExtra("loadDate");
+
         mTitleList.add("装箱单");
         mTitleList.add("细码单");
         fragments.add(new ContainerReport01Fragment());
-        fragments.add(new ContainerReport02Fragment());
+        fragments.add(new ContainerReport02Fragment(countryName, loadDate));
 
         TabPagerAdapter mAdapter = new TabPagerAdapter(getSupportFragmentManager(), mTitleList, fragments);
         mViewPager.setAdapter(mAdapter);
