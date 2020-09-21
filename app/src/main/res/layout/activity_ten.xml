@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ten.TenActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_ten"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        tools:listitem="@layout/item_ten" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textColor="@color/bottom_text_unchecked_color"
+        android:textSize="15sp" />
+</LinearLayout>

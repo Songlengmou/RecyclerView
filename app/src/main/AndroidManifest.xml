@@ -37,6 +37,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.ten.TenActivity" />
+        <activity android:name=".activity.nine.NineActivity" />
         <activity android:name=".activity.eight.EightActivity" />
         <activity android:name=".activity.seven.ContainerReportMangerActivity" />
         <activity android:name=".activity.seven.ContainerActivity" />

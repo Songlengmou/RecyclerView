@@ -7,4 +7,5 @@
     <color name="bottom_text_unchecked_color">#000</color>
     <color name="green">#00FF00</color>
     <color name="ye">#ff0</color>
+    <color name="white">#fff</color>
 </resources>

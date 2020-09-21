@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/seven_bales_bg"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/tv_bales"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2222"
+                android:textColor="@color/bottom_text_unchecked_color"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_10"
+                android:text="包"
+                android:textColor="@color/bottom_text_unchecked_color"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_meters_per_bale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="meters_per_bale"
+            android:textColor="@color/bottom_text_unchecked_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_volume_unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="volume_unit"
+            android:textColor="@color/bottom_text_unchecked_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_weight_unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="weight_unit"
+            android:textColor="@color/bottom_text_unchecked_color"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

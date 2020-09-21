@@ -5,4 +5,8 @@
     <string name="choose_country">COUNTRIES</string>
     <string name="input_user">请输入用户名</string>
     <string name="input_pwd">请输入密码</string>
+
+    <item name="type_header" type="integer" />
+    <item name="type_footer" type="integer" />
+    <item name="type_child" type="integer" />
 </resources>
