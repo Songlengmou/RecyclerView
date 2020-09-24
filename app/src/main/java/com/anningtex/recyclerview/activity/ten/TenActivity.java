@@ -36,6 +36,7 @@ public class TenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ten);
         ButterKnife.bind(this);
+        setTitle("Ten");
         initView();
     }
 

@@ -8,11 +8,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.anningtex.recyclerview.R;
 import com.anningtex.recyclerview.activity.eight.EightActivity;
+import com.anningtex.recyclerview.activity.eleven.ElevenActivity;
 import com.anningtex.recyclerview.activity.five.FiveActivity;
 import com.anningtex.recyclerview.activity.four.FourActivity;
+import com.anningtex.recyclerview.activity.nine.NineActivity;
 import com.anningtex.recyclerview.activity.one.OneActivity;
 import com.anningtex.recyclerview.activity.seven.ContainerActivity;
 import com.anningtex.recyclerview.activity.six.SixActivity;
+import com.anningtex.recyclerview.activity.ten.TenActivity;
 import com.anningtex.recyclerview.activity.three.ThreeActivity;
 import com.anningtex.recyclerview.activity.two.TwoActivity;
 
@@ -33,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @OnClick({R.id.tv_one, R.id.tv_two, R.id.tv_three, R.id.tv_four, R.id.tv_five, R.id.tv_six,
-            R.id.tv_seven, R.id.tv_eight})
+            R.id.tv_seven, R.id.tv_eight, R.id.tv_nine, R.id.tv_ten, R.id.tv_eleven})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tv_one:
@@ -59,6 +62,15 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.tv_eight:
                 startActivity(new Intent(MainActivity.this, EightActivity.class));
+                break;
+            case R.id.tv_nine:
+                startActivity(new Intent(MainActivity.this, NineActivity.class));
+                break;
+            case R.id.tv_ten:
+                startActivity(new Intent(MainActivity.this, TenActivity.class));
+                break;
+            case R.id.tv_eleven:
+                startActivity(new Intent(MainActivity.this, ElevenActivity.class));
                 break;
             default:
                 break;
