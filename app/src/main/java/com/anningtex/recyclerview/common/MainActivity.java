@@ -17,6 +17,7 @@ import com.anningtex.recyclerview.activity.seven.ContainerActivity;
 import com.anningtex.recyclerview.activity.six.SixActivity;
 import com.anningtex.recyclerview.activity.ten.TenActivity;
 import com.anningtex.recyclerview.activity.three.ThreeActivity;
+import com.anningtex.recyclerview.activity.twelve.launch.TwelveActivity;
 import com.anningtex.recyclerview.activity.two.TwoActivity;
 
 import butterknife.ButterKnife;
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @OnClick({R.id.tv_one, R.id.tv_two, R.id.tv_three, R.id.tv_four, R.id.tv_five, R.id.tv_six,
-            R.id.tv_seven, R.id.tv_eight, R.id.tv_nine, R.id.tv_ten, R.id.tv_eleven})
+            R.id.tv_seven, R.id.tv_eight, R.id.tv_nine, R.id.tv_ten, R.id.tv_eleven, R.id.tv_twelve})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tv_one:
@@ -71,6 +72,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.tv_eleven:
                 startActivity(new Intent(MainActivity.this, ElevenActivity.class));
+                break;
+            case R.id.tv_twelve:
+                startActivity(new Intent(MainActivity.this, TwelveActivity.class));
                 break;
             default:
                 break;

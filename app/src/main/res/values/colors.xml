@@ -8,4 +8,9 @@
     <color name="green">#00FF00</color>
     <color name="ye">#ff0</color>
     <color name="white">#fff</color>
+    <color name="light_gray">#e6e6e6</color>
+    <color name="table_head">#E5EFFE</color>
+    <color name="bei_jin">#2c8fd3</color>
+    <color name="border_color">#817F80</color>
+    <color name="dash_line_color">#C2C0C2</color>
 </resources>

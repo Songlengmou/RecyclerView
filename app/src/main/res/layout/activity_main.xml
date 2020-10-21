@@ -109,5 +109,14 @@
             android:text="跳转第十一个"
             android:textColor="@color/bottom_text_unchecked_color"
             android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_twelve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="跳转第十二个(表格)"
+            android:textColor="@color/bottom_text_unchecked_color"
+            android:textSize="20sp" />
     </LinearLayout>
 </ScrollView>
