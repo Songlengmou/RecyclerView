@@ -37,6 +37,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.thirteen.ThirteenActivity"></activity>
         <activity android:name=".activity.twelve.launch.TwelveActivity" />
         <activity android:name=".activity.eleven.ElevenActivity" />
         <activity android:name=".activity.ten.TenActivity" />
