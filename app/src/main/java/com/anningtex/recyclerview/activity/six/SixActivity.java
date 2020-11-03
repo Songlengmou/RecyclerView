@@ -62,3 +62,11 @@ public class SixActivity extends AppCompatActivity {
         });
     }
 }
+//如果适配器单独出来  可直接在其中写入
+/**
+ * int width = ((Activity) ivOverdue.getContext()).getWindowManager().getDefaultDisplay().getWidth();
+ * ViewGroup.LayoutParams params = imageView.getLayoutParams();
+ * params.width = width / 2;
+ * params.height = (int) (200 + Math.random() * 400);
+ * imageView.setLayoutParams(params);
+ */
